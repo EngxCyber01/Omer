@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Barber | Social Links</title>
+    <meta name="description" content="Connect with our barber shop on social media for the latest styles and appointments">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        barberRed: "#c10b0b",
+                        barberGold: "#d4af37",
+                        barberDark: "#1a1a1a"
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        heading: ['"Oswald"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-barberDark min-h-screen font-sans text-white">
+    <header class="bg-gradient-to-b from-barberDark to-black py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-barberGold">
+                <img src="photo_2025-07-25_23-19-42.jpg" alt="Barber profile" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <h1 class="text-3xl md:text-4xl font-heading font-bold mb-2">OMER BARBER</h1>
+            <p class="text-barberGold text-lg mb-6">Precision Cuts & Classic Styles</p>
+            <div class="w-24 h-1 bg-barberRed mx-auto mb-8"></div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="container mx-auto px-4 max-w-md">
+            <div class="space-y-6">
+                <a href="https://instagram.com" onclick="event.preventDefault(); window.open('https://instagram.com', '_blank');" 
+                   class="block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-instagram text-2xl mr-3"></i>
+                    Instagram
+                </a>
+                
+                <a href="https://snapchat.com" onclick="event.preventDefault(); window.open('https://snapchat.com', '_blank');" 
+                   class="block bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-snapchat text-2xl mr-3"></i>
+                    Snapchat
+                </a>
+                
+                <a href="https://facebook.com" onclick="event.preventDefault(); window.open('https://facebook.com', '_blank');" 
+                   class="block bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-facebook-f text-2xl mr-3"></i>
+                    Facebook
+                </a>
+                
+                <a href="https://whatsapp.com" onclick="event.preventDefault(); window.open('https://whatsapp.com', '_blank');" 
+                   class="block bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                    WhatsApp
+                </a>
+                
+                <a href="https://tiktok.com" onclick="event.preventDefault(); window.open('https://tiktok.com', '_blank');" 
+                   class="block bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fab fa-tiktok text-2xl mr-3"></i>
+                    TikTok
+                </a>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h2 class="text-2xl font-heading mb-4">BOOK AN APPOINTMENT</h2>
+                <p class="text-gray-300 mb-6">For the best haircut experience in town</p>
+                <a href="tel:+1234567890" class="inline-block bg-barberRed hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full transition-all duration-300">
+                    CALL NOW
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p class="mb-4">© 2025 Modern Barber. All rights reserved.</p>        
+            <p class="text-sm">Professional barber services with a modern touch.</p>
+              <p> Powered By :
+            <a href="https://engxcyber01.github.io/mySocialMedia/" class="text-blue-500" > Eng.Emad</a> 
+        </p>
+            <p>Last updat 2025. </p>
+            
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
